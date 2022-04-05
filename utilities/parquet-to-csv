@@ -1,0 +1,13 @@
+import pandas as pd
+
+SOURCE_DIRECTORY = "C:/Greenway/Data Engineering/IPA/raw_gi_data/raw_gi_data/"
+DESTINATION_DIRECTORY = "C:/Greenway/Data Engineering/IPA/raw_gi_data/raw_gi_data/"
+input_file_name
+output_file_name = "vsac_medcin_allergy.csv"
+
+def parequet_to_csv():
+    df = pd.read_parquet(SOURCE_DIRECTORY+input_file_name)
+    with open(DESTINATION_DIRECTORY+file_name[:-4], 'w+') as file_writer:
+        df.to_csv(DESTINATION_DIRECTORY+output_file_name)
+
+parequet_to_csv()
